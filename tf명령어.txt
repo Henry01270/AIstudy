@@ -1,0 +1,31 @@
+##tf 생성
+tf.constant()
+\tf.float32
+##덧셈
+tf.add() 
+##뺄셈
+tf.subtract()
+##나눗셈
+tf.divide()
+##곱셈
+tf.multiply()
+##제곱
+tf.square()
+##모양
+텐서.shape
+##weight 변수저장
+tf.Variable()
+##weight 변수수정
+assign()
+
+##0으로 가득찬 텐서(NULL과 비슷, shape기반)
+(ex) tf.zeros( [2, 2] )
+[[0, 0]
+ [0, 0]]
+
+(ex) tfzeros( [2, 2, 3] )
+[[[0, 0, 0]
+  [0, 0, 0]]
+  
+  [[0, 0, 0]
+   [0, 0, 0]]]
