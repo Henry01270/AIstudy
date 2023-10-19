@@ -26,7 +26,7 @@ model = tf.keras.models.Sequential([
 model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
 
 model.fit(np.array(x데이터), np.array(y데이터), epochs=1000)
-
+#
 #model.fit(x데이터, y데이터, epochs=100)
 #x데이터: [380, 3.21, 3], [660, 3.67, 3], ...
-#y데이터: [0, 1, 0, 1, 1, ...]
+#y데이터: [0, 1, 0, 1, 1, ...] 
