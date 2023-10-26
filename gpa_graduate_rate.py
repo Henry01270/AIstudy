@@ -19,13 +19,17 @@ for i, rows in data.iterrows():
 
 model = tf.keras.models.Sequential([
     tf.keras.layers.Dense(64, activation = 'tanh'),
-    tf.keras.layers.Dense(128, activation = 'tanh'),
+    tf.keras.layers.Dense(64, activation = 'tanh'),
+    tf.keras.layers.Dense(64, activation = 'tanh'),
     tf.keras.layers.Dense(1, activation = 'sigmoid')
 ])
 
 model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
 
 model.fit(np.array(x데이터), np.array(y데이터), epochs=1000)
+
+예측값 = model.predict([ [750, 3.70, 3], [400, 2.2, 1] ])
+print(예측값)
 #
 #model.fit(x데이터, y데이터, epochs=100)
 #x데이터: [380, 3.21, 3], [660, 3.67, 3], ...
